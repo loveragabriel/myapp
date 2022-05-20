@@ -1,3 +1,7 @@
+body{
+background: rgb(96,61,88);
+background: linear-gradient(6deg, rgba(96,61,88,1) 12%, rgba(0,173,255,1) 100%);
+}
 .App {
   text-align: center;
 }
@@ -39,7 +43,7 @@
 
 
 .Form-Container{
-  max-width: 400PX;
+  max-width: 500PX;
   height: 90vh;
   margin: 0 auto;
   text-align: center;

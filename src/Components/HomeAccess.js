@@ -1,4 +1,6 @@
 import { useState } from "react";
+import { Link } from "react-router-dom";
+
 const FormTemp = () =>{
     const [correo, setcorreo] = useState("");
     const [Password, setPassword] = useState('');
@@ -18,7 +20,7 @@ const FormTemp = () =>{
             <h2>Log In</h2>
             <form onSubmit={submited}>
                 <label> Email address</label>
-                <input type="email" placeholder="loveragabriel@gmail.com"
+                <input type="email" placeholder="loveragabriel "
                 value={correo}
                 onChange={(e) =>setcorreo(e.target.value)}></input>
                 <label> Password</label>
@@ -27,8 +29,10 @@ const FormTemp = () =>{
                 onChange={(e) => setPassword(e.target.value)}></input>
                 <button onClick={submited}>SUBMIT</button>
             </form>          
+            
             <p>Credential Access: <br/>
             loveragabriel / Entrar123 </p>
+            
         </div>
     )
 }
