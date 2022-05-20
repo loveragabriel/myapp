@@ -8,8 +8,11 @@ const HomePage =()=>{
         
         
         <div className="Form-Container">
-            <h1>Welcome</h1>
+        
+        <nav>
             
+        </nav>
+  
         </div>
         
     )
