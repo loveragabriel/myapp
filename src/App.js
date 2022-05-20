@@ -5,6 +5,7 @@ import HomePage from './Components/home';
 import About from './Components/aboutUs';
 import Contact from './Components/Contact';
 import { Route, Routes } from 'react-router';
+import NavComponent from './Components/NavComponent';
 
 import { BrowserRouter } from "react-router-dom";
 
@@ -15,8 +16,10 @@ function App() {
         <Routes>
           <Route path="/" element={<HomePage/>}/>
           <Route path="aboutUs" element={<About/>}/>
+          <Route path="Contact" element={<Contact/>}/>
+         
         </Routes>
-        </BrowserRouter>
+        </BrowserRouter>       
     </div>
   );
 }
