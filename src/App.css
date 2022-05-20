@@ -116,14 +116,15 @@ h2:hover{
 
 ul{
   list-style: none;
-  display: flex;
+  display: inline-flex;
   justify-items: center;
   box-sizing: border-box;
   flex-wrap: wrap;
 }
 
 li{
-  
   text-decoration: none;
   padding: 2em;
+
+ 
 }
