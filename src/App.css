@@ -109,3 +109,21 @@ h2:hover{
     margin: 0;
   }
 }
+
+.home-title{
+  padding-top:  80px;
+}
+
+ul{
+  list-style: none;
+  display: flex;
+  justify-items: center;
+  box-sizing: border-box;
+  flex-wrap: wrap;
+}
+
+li{
+  
+  text-decoration: none;
+  padding: 2em;
+}

@@ -7,12 +7,13 @@ const HomePage =()=>{
     return(
         
         
-        <div className="Form-Container">
-        
-        <nav>
-            
-        </nav>
-  
+        <div className="Form-Container">          
+            <h1 className="home-title">LAVADOS</h1>
+            <ul>
+                <li>Home</li>
+                <li>Contact</li>
+                <li>About Us</li>
+            </ul>
         </div>
         
     )
