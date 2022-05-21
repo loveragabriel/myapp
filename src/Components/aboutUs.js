@@ -1,20 +1,15 @@
 import React from "react";
 import { Routes, Route, Link } from "react-router-dom";
+import NavComponent from "./NavComponent";
 
 
 const About =()=>{
     return(
-        <div className="Form-Container">
-            <h1>
-                Here we talk abput us
-            </h1>
+        <div>
+        <NavComponent></NavComponent>
+            <h1>Hello this is my About Page</h1>
+            <h2>Please learn more about us!</h2>
             
-            <nav>
-            <Link to="/">Home Access</Link>
-            <Link to="/aboutUs">About Us</Link>
-            <Link to="/Contact">Contacs</Link>
-            
-            </nav>
         </div>
     )
 }

@@ -45,7 +45,7 @@ background: linear-gradient(6deg, rgba(96,61,88,1) 12%, rgba(0,173,255,1) 100%);
 .Form-Container{
   max-width: 500PX;
   height: 90vh;
-  margin: 0 auto;
+  margin: 2px auto;
   text-align: center;
   margin-bottom: 10vh;
   border-radius: 8px;
@@ -61,10 +61,10 @@ background: linear-gradient(6deg, rgba(96,61,88,1) 12%, rgba(0,173,255,1) 100%);
 }
 
 h1{
-  padding-top: 30px;
+  
   font-size: 20px;
   color: #61dafb;
-  margin-bottom: 40px;
+
 }
 
 .Form-Container input, .Form-Container text, .Form-Container select{
@@ -102,36 +102,82 @@ h2:hover{
   color: blueviolet;
 }
 
-@media screen and (max-width: 400px) {
+@media screen and (max-width: 500px) {
   .Form-Container {
     width: 100vw;
     height: 100vh;
-    margin: 0;
+    margin-top: 5px;
   }
+
+  .NavBar{
+    display:flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center; 
+  }
+
+  .nav-container{
+    display: flex;
+    background-color: #204f5c;
+    justify-content: center;  
+  }
+
+
 }
 
+
+@media screen and (max-width: 320px) {
+  li{
+    display: none;
+  }
+  .NavBar{
+    display: flex;
+    flex-direction: row;
+  }
+  .nav-icon{
+    display: flex;
+  }
+
+}
 .home-title{
   padding-top:  80px;
 }
-
 nav{
   display: inline-flex;
-  justify-content:center;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0,
 }
-
-
 
 ul{
   list-style: none;
-  display: inline-flex;
-  justify-items: center;
-  box-sizing: border-box;
+  display: flex;
+  margin: 1px;
+  padding: 2px;
+ 
+ 
+
   flex-wrap: wrap;
 }
 
 li{
   text-decoration: none;
-  padding: 2em;
+  padding:1em;
+  justify-content: center;
+}
 
- 
+.nav-container{
+  display:inline;
+  /*background-color: #378297;*/
+  align-items: center;
+  opacity: 0.7;
+  margin-top: 2px;
+  width: 100%;
+  border-radius: 8px;
+  box-shadow: 10px 10px 25px 0px rgba(56, 47, 47, 0.46);   
+}
+
+.nav-icon{
+  display: none;
 }
