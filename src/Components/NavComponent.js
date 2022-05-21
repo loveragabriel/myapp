@@ -15,7 +15,7 @@ const NavComponent = () =>{
                             ICON
                     </div>
                     <ul>
-                        <li><Link to="/">Home Access</Link></li>
+                        <li><Link to="/HomeAccess">Home Access</Link></li>
                         <li><Link to="/aboutUs">About Us</Link></li>
                         <li><Link to="/Contact">Contacs</Link></li>
                     </ul>            

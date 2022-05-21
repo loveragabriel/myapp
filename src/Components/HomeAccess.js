@@ -1,7 +1,9 @@
+import React from "react";
+import ReactDOM from "react-dom/client";
 import { useState } from "react";
-import { Link } from "react-router-dom";
+import { Routes, Route, Link } from "react-router-dom";
 
-const FormTemp = () =>{
+const HomeAccess = () =>{
     const [correo, setcorreo] = useState("");
     const [Password, setPassword] = useState('');
     const submited = (e) => {
@@ -15,9 +17,9 @@ const FormTemp = () =>{
         else alert("You're Wrong try Again");
     }
     return(
-        <div className="Form-Container">
-         <h1>Lavados</h1>
-            <h2>Log In</h2>
+        <div>
+         <h1>my-react-page</h1>
+            <h2 className="log-in">Log In</h2>
             <form onSubmit={submited}>
                 <label> Email address</label>
                 <input type="email" placeholder="loveragabriel "
@@ -38,4 +40,4 @@ const FormTemp = () =>{
 }
 
 
-export default FormTemp;
+export default HomeAccess;

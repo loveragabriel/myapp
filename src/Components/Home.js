@@ -1,10 +1,9 @@
 import React from "react";
 import ReactDOM from "react-dom/client";
 import { Routes, Route, Link } from "react-router-dom";
-import About from "./aboutUs";
 import NavComponent from "./NavComponent";
 
-const HomePage =()=>{
+const Home =()=>{
     return(      
             <div>
             <NavComponent/>
@@ -15,4 +14,4 @@ const HomePage =()=>{
     )
 }
 
-export default HomePage;
+export default  Home;
