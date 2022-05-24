@@ -2,21 +2,32 @@ import React from "react";
 import ReactDOM from "react-dom/client";
 import { useState } from "react";
 import { Routes, Route, Link } from "react-router-dom";
+import { Navigate, useNavigate } from "react-router";
+import NavComponent from "./NavComponent";
+import About from "./aboutUs";
+
+//Pages
+
+
 
 const HomeAccess = () =>{
     const [correo, setcorreo] = useState("");
     const [Password, setPassword] = useState('');
+    const navigate =  useNavigate();
     const submited = (e) => {
+
         e.preventDefault()
         const blog = {correo, Password}
         let letEmail = blog.correo
         /*console.log(letEmail); */
         let letPasswrd = blog.Password
         /*console.log(letPasswrd); */
-        if (letEmail=="loveragabriel" && letPasswrd=="Entrar123"){window.open("https://www.linkedin.com/in/loveragabriel/", '_blank')}
-        else alert("You're Wrong try Again");
+
+        if (letEmail=="loveragabriel" && letPasswrd=="Entrar123"){navigate('/Home')}
+        else alert("You're Wrong try Again");  
     }
-    return(
+   
+    return( 
         <div>
          <h1>my-react-page</h1>
             <h2 className="log-in">Log In</h2>
@@ -33,8 +44,7 @@ const HomeAccess = () =>{
             </form>          
             
             <p>Credential Access: <br/>
-            loveragabriel / Entrar123 </p>
-            
+            loveragabriel / Entrar123 </p>            
         </div>
     )
 }

@@ -7,8 +7,7 @@ const Home =()=>{
     return(      
             <div>
             <NavComponent/>
-            <h1>This is my Home Page </h1>
-            <h2>wELCOME</h2>
+            <h1>Welcome you are in </h1>
             </div>
         
     )
