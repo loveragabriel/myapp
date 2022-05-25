@@ -11,21 +11,27 @@ import About from "./AboutUs";
 
 
 const HomeAccess = () =>{
-    const [email, setEmail] = useState("");
-    const [Password, setPassword] = useState('');
+   const [email, setEmail] = useState("");
+    const [password, setpassword] = useState('');
     const navigate =  useNavigate();
     const submited = (e) => {
 
+            // Here check if the credentials are correct for access 
         e.preventDefault()
-        const blog = {email, Password}
-        let email_ = blog.email
-        /*console.log(letEmail); */
-        let passwrd_ = blog.Password
-        /*console.log(letPasswrd); */
-
-        if (email_=="loveragabriel" &&  passwrd_=="Entrar123"){navigate('/Home')}
-        else alert("You're Wrong try Again");  
+        const log = {email, password}
+        let email_ = log.email;
+        let passwrd_ = log.password;
+        if (email_=="loveragabriel" &&  passwrd_=="Entrar123"){navigate('/Home')}    
+        else if (email_=="loveragabriel" &&  passwrd_ !="Entrar123") {            
+            alert("the password is wrong");
+        }
+        else if (email_!="loveragabriel" &&  passwrd_ ==="Entrar123") {
+            alert("check the email entered")
+        }
+        else
+         alert("You're Wrong try Again");  
     }
+   
    
     return( 
         <div>
@@ -38,8 +44,8 @@ const HomeAccess = () =>{
                 onChange={(e) =>setEmail(e.target.value)}></input>
                 <label> Password</label>
                 <input type="password" placeholder="**********"
-                value={Password}
-                onChange={(e) => setPassword(e.target.value)}></input>
+                value={password}
+                onChange={(e) => setpassword(e.target.value)}></input>
                 <button onClick={submited}>SUBMIT</button>
             </form>          
             
