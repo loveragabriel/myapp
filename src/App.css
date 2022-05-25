@@ -98,6 +98,25 @@ button:hover {
   margin: 1em  auto;
 }
 
+ul li{
+  background-color: #8a9ec3;
+  opacity: 0.5;
+  box-shadow: 1px 1px 1px rgba(47, 80, 80, 0.8) ;
+  border-radius: 7px;
+  padding: 6px;
+  margin: 2px;
+}
+
+
+.btn-home:hover, .btn-contact:hover, .btn-about:hover{
+ background-color: #e7e9ec;
+ transform: scale(0.90);
+ 
+}
+a {
+  text-decoration: none;
+} 
+
 
 
 @media screen and (max-width: 500px) {

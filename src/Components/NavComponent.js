@@ -15,9 +15,9 @@ const NavComponent = () =>{
                             ICON
                     </div>
                     <ul>
-                        <li><Link to="/">Home Access</Link></li>
-                        <li><Link to="/aboutUs">About Us</Link></li>
-                        <li><Link to="/Contact">Contacs</Link></li>
+                        <li className="btn-home"><Link to="/">Home Access</Link></li>
+                        <li className="btn-about  "><Link to="/aboutUs">About Us</Link></li>
+                        <li className="btn-contact"><Link to="/Contact">Contacs</Link></li>
                     </ul>            
                 </nav>
             </div>

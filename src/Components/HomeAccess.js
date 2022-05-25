@@ -11,19 +11,19 @@ import About from "./AboutUs";
 
 
 const HomeAccess = () =>{
-    const [correo, setcorreo] = useState("");
+    const [email, setEmail] = useState("");
     const [Password, setPassword] = useState('');
     const navigate =  useNavigate();
     const submited = (e) => {
 
         e.preventDefault()
-        const blog = {correo, Password}
-        let letEmail = blog.correo
+        const blog = {email, Password}
+        let email_ = blog.email
         /*console.log(letEmail); */
-        let letPasswrd = blog.Password
+        let passwrd_ = blog.Password
         /*console.log(letPasswrd); */
 
-        if (letEmail=="loveragabriel" && letPasswrd=="Entrar123"){navigate('/Home')}
+        if (email_=="loveragabriel" &&  passwrd_=="Entrar123"){navigate('/Home')}
         else alert("You're Wrong try Again");  
     }
    
@@ -34,8 +34,8 @@ const HomeAccess = () =>{
             <form onSubmit={submited}>
                 <label> Email address</label>
                 <input type="email" placeholder="loveragabriel "
-                value={correo}
-                onChange={(e) =>setcorreo(e.target.value)}></input>
+                value={email}
+                onChange={(e) =>setEmail(e.target.value)}></input>
                 <label> Password</label>
                 <input type="password" placeholder="**********"
                 value={Password}
