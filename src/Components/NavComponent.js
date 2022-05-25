@@ -18,7 +18,10 @@ const NavComponent = () =>{
                         <li className="btn-home"><Link to="/">Home Access</Link></li>
                         <li className="btn-about  "><Link to="/aboutUs">About Us</Link></li>
                         <li className="btn-contact"><Link to="/Contact">Contacs</Link></li>
-                    </ul>            
+                    </ul>
+                    <div>
+                    <button><Link to="/">Log Out</Link></button>
+                    </div>            
                 </nav>
             </div>
         </div>
