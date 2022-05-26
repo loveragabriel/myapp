@@ -16,7 +16,7 @@ const UserCreated =()=>{
     }
     return(
         <div>
-        <NavComponent></NavComponent>
+        
             <h1>
                 User Created Successfully
             </h1>
