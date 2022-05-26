@@ -3,19 +3,16 @@ import ReactDOM from "react-dom/client";
 import { useState } from "react";
 import { Routes, Route, Link } from "react-router-dom";
 import { Navigate, useNavigate } from "react-router";
-import NavComponent from "./NavComponent";
-import About from "./AboutUs";
 
 //Pages
-
-
+import NavComponent from "./NavComponent";
+import About from "./AboutUs";
 
 const HomeAccess = () =>{
    const [email, setEmail] = useState("");
     const [password, setpassword] = useState('');
     const navigate =  useNavigate();
     const submited = (e) => {
-
             // Here check if the credentials are correct for access 
         e.preventDefault()
         const log = {email, password}
@@ -32,14 +29,13 @@ const HomeAccess = () =>{
          alert("You're Wrong try Again");  
     }
    
-   
     return( 
         <div>
-         <h1>my-react-page</h1>
+            <h1>my-react-page</h1>
             <h2 className="log-in">Log In</h2>
             <form onSubmit={submited}>
                 <label> Email address</label>
-                <input type="email" placeholder="loveragabriel "
+                <input type="email" placeholder="loveragabriel"
                 value={email}
                 onChange={(e) =>setEmail(e.target.value)}></input>
                 <label> Password</label>
@@ -48,7 +44,6 @@ const HomeAccess = () =>{
                 onChange={(e) => setpassword(e.target.value)}></input>
                 <button onClick={submited}>SUBMIT</button>
             </form>          
-            
             <p>Credential Access: <br/>
             loveragabriel / Entrar123 </p>            
         </div>
