@@ -4,6 +4,7 @@ import { useState } from "react";
 import { Routes, Route, Link } from "react-router-dom";
 import { Navigate, useNavigate } from "react-router";
 
+
 //Pages
 import NavComponent from "./NavComponent";
 import About from "./AboutUs";
@@ -28,10 +29,14 @@ const HomeAccess = () =>{
         else
          alert("You're Wrong try Again");  
     }
+    const signUp = (e)=>{
+        e.preventDefault()
+        if (signUp){navigate('/SignUp')}
+    }
    
     return( 
         <div>
-            <h1>my-react-page</h1>
+            <h1>TRACKING</h1>
             <h2 className="log-in">Log In</h2>
             <form onSubmit={submited}>
                 <label> Email address</label>
@@ -45,7 +50,11 @@ const HomeAccess = () =>{
                 <button onClick={submited}>SUBMIT</button>
             </form>          
             <p>Credential Access: <br/>
-            loveragabriel / Entrar123 </p>            
+            loveragabriel / Entrar123 </p>      
+            <hr></hr>
+            <h2> Don't have an account? </h2>
+            <button onClick={signUp}>Create Account</button>
+
         </div>
     )
 }

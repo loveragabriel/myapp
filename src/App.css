@@ -60,6 +60,11 @@ background: linear-gradient(6deg, rgba(96,61,88,1) 12%, rgba(0,173,255,1) 100%);
   color: #61dafb;
 }
 
+.sign-up label {
+  text-align: left;
+  margin-left: 55px;
+}
+
 h1{
   
   font-size: 20px;

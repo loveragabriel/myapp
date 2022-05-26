@@ -9,17 +9,12 @@ const NavComponent = () =>{
             <div className="nav-container">
                 <nav className="NavBar">
                     <h1 className="web-title">
-                        WEB APP NAME
+                       TRACKING
                     </h1>
                     <div className="nav-icon">
                             ICON
                     </div>
                     <ul>
-                        <li className="btn-home">
-                            <Link to="/">
-                                Home Access
-                            </Link>
-                        </li>
                         <li className="btn-about  ">
                             <Link to="/aboutUs">
                                 About Us
