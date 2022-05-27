@@ -9,7 +9,7 @@ const NavComponent = () =>{
             <div className="nav-container">
                 <nav className="NavBar">
                     <h1 className="web-title">
-                       TRACKING
+                       My App
                     </h1>
                     <div className="nav-icon">
                             ICON

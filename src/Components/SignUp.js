@@ -16,9 +16,9 @@ const SignUp = () =>{
     }
     return( 
         <div >
-            <h1>TRACKING</h1>
+            <h1>   </h1>
             <h2 >Sign Up</h2>
-            <form action="" className="sign-up">
+            <form action="" className="sign-up-form">
                 <label> Name </label>
                     <input type="text" placeholder="Gabriel Lovera"/>
                 
@@ -26,6 +26,9 @@ const SignUp = () =>{
                     <input type="email" placeholder="loveragabriel20@gmail.com"/>
                 
                 <label> Password </label>
+                    <input type="password" placeholder="********"/>
+                    
+                <label> Repeat the Password </label>
                     <input type="password" placeholder="********"/>
                 
                 <button onClick={signIn}>Create</button>

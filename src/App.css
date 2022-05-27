@@ -60,7 +60,7 @@ background: linear-gradient(6deg, rgba(96,61,88,1) 12%, rgba(0,173,255,1) 100%);
   color: #61dafb;
 }
 
-.sign-up label {
+.sign-up-form label {
   text-align: left;
   margin-left: 55px;
 }
@@ -205,4 +205,8 @@ li{
 
 .nav-icon{
   display: none;
+}
+
+.sign-up{
+  margin-top: 35%;
 }

@@ -36,7 +36,7 @@ const HomeAccess = () =>{
    
     return( 
         <div>
-            <h1>TRACKING</h1>
+            <h1></h1>
             <h2 className="log-in">Log In</h2>
             <form onSubmit={submited}>
                 <label> Email address</label>
@@ -50,9 +50,9 @@ const HomeAccess = () =>{
                 <button onClick={submited}>SUBMIT</button>
             </form>          
             <p>Credential Access: <br/>
-            loveragabriel / Entrar123 </p>      
+            loveragabriel / Entrar123 </p> 
             <hr></hr>
-            <h2> Don't have an account? </h2>
+            <h2 className="sign-up"> Don't have an account? </h2>
             <button onClick={signUp}>Create Account</button>
 
         </div>
