@@ -10,8 +10,10 @@ import { Navigate, useNavigate } from "react-router";
 
 const SignUp = () =>{
     const navigate =  useNavigate();
+    const [name,setName] = useState('');
     const signIn = (e)=>{
         e.preventDefault()
+         const _name = name;
         if (signIn){navigate ('/UserCreated')}
     }
     return( 
@@ -20,7 +22,7 @@ const SignUp = () =>{
             <h2 >Sign Up</h2>
             <form action="" className="sign-up-form">
                 <label> Name </label>
-                    <input type="text" placeholder="Gabriel Lovera"/>
+                    <input type="text" placeholder="Gabriel Lovera" value={name} onChange={(e) => console.log(e.target.setName())}/> />
                 
                 <label> Email </label>
                     <input type="email" placeholder="loveragabriel20@gmail.com"/>
