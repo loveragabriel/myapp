@@ -1,9 +1,11 @@
 import React from "react";
-/*import ReactDOM from "react-dom/client";
-import { useState } from "react";
+import ReactDOM from "react-dom/client";
+import { useState } from "react";/*
 import { Routes, Route, Link } from "react-router-dom";
 import { Navigate, useNavigate } from "react-router";*/
 import styled from "styled-components";
+/*import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faArrowRightRotate } from '@fortawesome/free-solid-svg-icons'*/
 
  
 //Pages
@@ -11,15 +13,51 @@ import styled from "styled-components";
 
 const Label = styled.h1`
  background-color: blue; 
+`; 
+
+const GroupDiv = styled.div
+    `
+    position: relative; 
+    z-index:90; 
+    `;
+
+const Input = styled.input
 `
-; 
+hiegth: 
+
+` 
 const SignUp= ()=> {
+    const [name,setName] = useState("");
+    const [email,SetEmail] = useState("");
+
+    const submitClick =(e)=>{
+        e.preventDefault() 
+        const name = e.target.name.value;
+        const email = e.target.email.value;
+
+        alert(name.value + email.value)
+    }
+
+    const handlingState=(e)=>{
+        e.preventDefault();
+        setName(e.target.name.value);
+        
+    }
+     
     return(
         <div>
             <h1>Hello This practice</h1>
-            <form>
+            <form onSubmit={submitClick}>
+            <div>
                 <Label>Name </Label>
-                <input type="text" placeholder="Gabriel Lovera"/>
+                <input type="text" placeholder="Gabriel Lovera" name="name" onChange={handlingState} value={name}/>
+            </div>
+            <div>
+                <Label>Email </Label>
+                <input type="email" placeholder="loveragabriel20@gmail.com" name="email" onChange={handlingState} value={email}/>
+            </div>
+                <p></p>
+                <button type="Submit">Send</button>
             </form>
         </div>
         
