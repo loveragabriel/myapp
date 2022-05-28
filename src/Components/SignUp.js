@@ -1,14 +1,39 @@
 import React from "react";
-import ReactDOM from "react-dom/client";
+/*import ReactDOM from "react-dom/client";
 import { useState } from "react";
 import { Routes, Route, Link } from "react-router-dom";
-import { Navigate, useNavigate } from "react-router";
+import { Navigate, useNavigate } from "react-router";*/
+import styled from "styled-components";
 
-
+ 
 //Pages
 
 
-const SignUp = () =>{
+const Label = styled.h1`
+ background-color: blue; 
+`
+; 
+const SignUp= ()=> {
+    return(
+        <div>
+            <h1>Hello This practice</h1>
+            <form>
+                <Label>Name </Label>
+                <input type="text" placeholder="Gabriel Lovera"/>
+            </form>
+        </div>
+        
+    )
+}
+    
+
+   
+
+
+
+export default SignUp;
+
+/*const SignUp = () =>{
     const navigate =  useNavigate();
     const [name,setName] = useState('');
     const signIn = (e)=>{
@@ -38,9 +63,4 @@ const SignUp = () =>{
 
         </div>
     )
-    }
-   
-
-
-
-export default SignUp;
+    }*/
