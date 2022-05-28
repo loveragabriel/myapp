@@ -32,29 +32,27 @@ const SignUp= ()=> {
 
     const submitClick =(e)=>{
         e.preventDefault() 
-        const name = e.target.name.value;
-        const email = e.target.email.value;
-
-        alert(name.value + email.value)
+        alert(name + " " + email);
     }
-
+/*
     const handlingState=(e)=>{
         e.preventDefault();
-        setName(e.target.name.value);
+        name = (e.target.name.value);
+        email = (e.target.email.value);
         
     }
-     
+     */
     return(
         <div>
             <h1>Hello This practice</h1>
             <form onSubmit={submitClick}>
             <div>
                 <Label>Name </Label>
-                <input type="text" placeholder="Gabriel Lovera" name="name" onChange={handlingState} value={name}/>
+                <input type="text" placeholder="Gabriel Lovera" name="name" onChange={e => setName(e.target.value)} value={name}/>
             </div>
             <div>
                 <Label>Email </Label>
-                <input type="email" placeholder="loveragabriel20@gmail.com" name="email" onChange={handlingState} value={email}/>
+                <input type="email" placeholder="loveragabriel20@gmail.com" name="email" onChange={e => SetEmail(e.target.value)} value={email}/>
             </div>
                 <p></p>
                 <button type="Submit">Send</button>
