@@ -1,9 +1,10 @@
 import React from "react";
 import ReactDOM from "react-dom/client";
-import { useState } from "react";/*
+import { useState } from "react";
 import { Routes, Route, Link } from "react-router-dom";
-import { Navigate, useNavigate } from "react-router";*/
+import { Navigate, useNavigate } from "react-router";
 import styled from "styled-components";
+import { toHaveErrorMessage } from "@testing-library/jest-dom/dist/matchers";
 /*import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faArrowRightRotate } from '@fortawesome/free-solid-svg-icons'*/
 
@@ -11,50 +12,57 @@ import { faArrowRightRotate } from '@fortawesome/free-solid-svg-icons'*/
 //Pages
 
 
-const Label = styled.h1`
- background-color: blue; 
-`; 
-
-const GroupDiv = styled.div
-    `
-    position: relative; 
-    z-index:90; 
-    `;
-
-const Input = styled.input
-`
-hiegth: 
-
-` 
+ 
 const SignUp= ()=> {
     const [name,setName] = useState("");
     const [email,SetEmail] = useState("");
+    const [password,SetPassword] = useState("");
+    const [rPassword, SetRPassword] = useState("");
+    const navigate =  useNavigate();
+
 
     const submitClick =(e)=>{
-        e.preventDefault() 
-        alert(name + " " + email);
-    }
-/*
-    const handlingState=(e)=>{
-        e.preventDefault();
-        name = (e.target.name.value);
-        email = (e.target.email.value);
+        e.preventDefault()   
         
+        if(name=='' || email==0 || password == 0 && rPassword==0){
+            alert("Complete all the files")
+        }
+         else if (password != rPassword){
+             alert('password does not match');
+         } else {
+            const  myObject = [
+                name, email, password, rPassword
+
+            ] ;    
+            console.log(myObject);
+            {navigate('/')};
     }
-     */
+
+}
+
+
     return(
         <div>
             <h1>Hello This practice</h1>
             <form onSubmit={submitClick}>
             <div>
-                <Label>Name </Label>
+                <label>Name </label>
                 <input type="text" placeholder="Gabriel Lovera" name="name" onChange={e => setName(e.target.value)} value={name}/>
             </div>
             <div>
-                <Label>Email </Label>
+                <label>Email </label>
                 <input type="email" placeholder="loveragabriel20@gmail.com" name="email" onChange={e => SetEmail(e.target.value)} value={email}/>
             </div>
-                <p></p>
+            <div>
+                <label>Password </label>
+                <input type="Password" placeholder="*************" name="password" onChange={e => SetPassword(e.target.value)} value={password}/>
+            </div>
+            <div>
+                <label>Repeat Password </label>
+                <input type="Password" placeholder="*************" name="rPassword" onChange={e => SetRPassword(e.target.value)} value={rPassword}
+                    
+                />
+            </div>
                 <button type="Submit">Send</button>
             </form>
         </div>
