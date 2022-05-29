@@ -18,25 +18,29 @@ const SignUp= ()=> {
     const [email,SetEmail] = useState("");
     const [password,SetPassword] = useState("");
     const [rPassword, SetRPassword] = useState("");
+    const [ifLognUp, setIfLogUp] = useState('false');
     const navigate =  useNavigate();
 
 
     const submitClick =(e)=>{
         e.preventDefault()   
-        
+        const myObject=[]
         if(name=='' || email==0 || password == 0 && rPassword==0){
             alert("Complete all the files")
         }
          else if (password != rPassword){
              alert('password does not match');
          } else {
-            const  myObject = [
-                name, email, password, rPassword
-
-            ] ;    
-            console.log(myObject);
+            myObject.push(name, email, password, rPassword)
+            const newUser = JSON.stringify(myObject);
+            localStorage.setItem('newUser',newUser);
+            alert("Welcome " + name )
             {navigate('/')};
     }
+
+    
+
+
 
 }
 

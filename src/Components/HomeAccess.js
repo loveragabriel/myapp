@@ -5,9 +5,11 @@ import { Routes, Route, Link } from "react-router-dom";
 import { Navigate, useNavigate } from "react-router";
 
 
+
 //Pages
 import NavComponent from "./NavComponent";
 import About from "./AboutUs";
+
 
 const HomeAccess = () =>{
    const [email, setEmail] = useState("");
@@ -16,23 +18,32 @@ const HomeAccess = () =>{
     const submited = (e) => {
             // Here check if the credentials are correct for access 
         e.preventDefault()
-        const log = {email, password}
-        let email_ = log.email;
-        let passwrd_ = log.password;
-        if (email_=="loveragabriel" &&  passwrd_=="Entrar123"){navigate('/Home')}    
-        else if (email_=="loveragabriel" &&  passwrd_ !="Entrar123") {            
-            alert("the password is wrong");
-        }
-        else if (email_!="loveragabriel" &&  passwrd_ ==="Entrar123") {
-            alert("check the email entered")
-        }
-        else
-         alert("You're Wrong try Again");  
+        const hereTheUser = JSON.parse(localStorage.getItem("newUser"));
+        const emailStored = hereTheUser[1]
+        const passStored = hereTheUser[2];
+        const correctEmail = email === emailStored;
+        const correctPass = password === passStored;
+
+        if(correctEmail== false && correctPass){
+            alert("Wrong Email");
+        } else if (correctEmail && correctPass ==false){
+            alert("Wrong Password") 
+        } else {navigate('/Home')}
+            
+        
+       
+       
+        
+    
     }
     const signUp = (e)=>{
         e.preventDefault()
         if (signUp){navigate('/SignUp')}
+        
     }
+    
+     
+        
    
     return( 
         <div>
@@ -40,17 +51,17 @@ const HomeAccess = () =>{
             <h2 className="log-in">Log In</h2>
             <form onSubmit={submited}>
                 <label> Email address</label>
-                <input type="email" placeholder="loveragabriel"
+                <input type="email" placeholder="loveragabriel" required
                 value={email}
                 onChange={(e) =>setEmail(e.target.value)}></input>
                 <label> Password</label>
-                <input type="password" placeholder="**********"
+                <input type="password" placeholder="**********" required
                 value={password}
                 onChange={(e) => setpassword(e.target.value)}></input>
                 <button onClick={submited}>SUBMIT</button>
             </form>          
-            <p>Credential Access: <br/>
-            loveragabriel / Entrar123 </p> 
+            <hr></hr>
+              
             <hr></hr>
             <h2 className="sign-up"> Don't have an account? </h2>
             <button onClick={signUp}>Create Account</button>
