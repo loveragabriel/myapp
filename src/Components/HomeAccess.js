@@ -12,6 +12,7 @@ import About from "./AboutUs";
 
 
 const HomeAccess = () =>{
+   
    const [email, setEmail] = useState("");
     const [password, setpassword] = useState('');
     const navigate =  useNavigate();
@@ -28,18 +29,14 @@ const HomeAccess = () =>{
             alert("Wrong Email");
         } else if (correctEmail && correctPass ==false){
             alert("Wrong Password") 
-        } else {navigate('/Home')}
-            
-        
-       
-       
-        
-    
+        } else if (correctEmail == false && correctPass == false){
+            alert("There is not a user- please Sign up!")
+        }        
+        else {navigate('/Home')}       
     }
     const signUp = (e)=>{
         e.preventDefault()
         if (signUp){navigate('/SignUp')}
-        
     }
     
      
