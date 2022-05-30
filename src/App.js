@@ -29,6 +29,8 @@ function App() {
           <Route path='NavComponent' element={<NavComponent/>}/>
           <Route path='SignUp' element={<SignUp/>}/>
           <Route path='UserCreated' element={<UserCreated/>}/>
+          <Route path="/Home" component={HomeAccess ? "./" : HomeAccess} />
+
         </Routes>
         </BrowserRouter>   
         </div>    

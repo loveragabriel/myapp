@@ -3,6 +3,7 @@ import ReactDOM from "react-dom/client";
 import { useState } from "react";
 import { Routes, Route, Link } from "react-router-dom";
 import { Navigate, useNavigate } from "react-router";
+import { useEffect } from "react";
 
 //Pages
 import NavComponent from "./NavComponent";
@@ -10,6 +11,7 @@ import About from "./AboutUs";
 
 
 const HomeAccess = () =>{
+  
    
    const [email, setEmail] = useState("");
     const [password, setpassword] = useState('');
@@ -64,5 +66,6 @@ const HomeAccess = () =>{
         </div>
     )
 }
+
 
 export default HomeAccess;
