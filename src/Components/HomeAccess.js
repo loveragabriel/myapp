@@ -4,8 +4,6 @@ import { useState } from "react";
 import { Routes, Route, Link } from "react-router-dom";
 import { Navigate, useNavigate } from "react-router";
 
-
-
 //Pages
 import NavComponent from "./NavComponent";
 import About from "./AboutUs";
@@ -38,10 +36,7 @@ const HomeAccess = () =>{
         e.preventDefault()
         if (signUp){navigate('/SignUp')}
     }
-    
-     
-        
-   
+       
     return( 
         <div>
             <h1></h1>
@@ -66,6 +61,5 @@ const HomeAccess = () =>{
         </div>
     )
 }
-
 
 export default HomeAccess;

@@ -1,6 +1,4 @@
 import React from "react";
-import ReactDOM from "react-dom/client";
-import { Routes, Route, Link } from "react-router-dom";
 import NavComponent from "./NavComponent";
 
 const Home =()=>{
