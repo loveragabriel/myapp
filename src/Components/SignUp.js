@@ -26,7 +26,7 @@ const SignUp= ()=> {
         e.preventDefault()   
         const myObject=[]
         if(name=='' || email==0 || password == 0 && rPassword==0){
-            alert("Complete all the files")
+            alert("Complete all the fields")
         }
          else if (password != rPassword){
              alert('password does not match');
@@ -37,14 +37,7 @@ const SignUp= ()=> {
             alert("Welcome " + name )
             {navigate('/')};
     }
-
-    
-
-
-
 }
-
-
     return(
         <div>
             <h1>Hello This practice</h1>
