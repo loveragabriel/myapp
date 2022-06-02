@@ -4,6 +4,7 @@ import {
   Routes,
   Route,
 } from "react-router-dom";
+//TODO: Create private routes!
 
 //Pages
 import './App.css';
@@ -14,6 +15,7 @@ import Contact from "./Components/Contact";
 import NavComponent from "./Components/NavComponent";
 import SignUp from "./Components/SignUp";
 import UserCreated from "./Components/UserCreated";
+import { NotFound } from "./Components/NotFound";
 
 
 function App() {
@@ -29,8 +31,7 @@ function App() {
           <Route path='NavComponent' element={<NavComponent/>}/>
           <Route path='SignUp' element={<SignUp/>}/>
           <Route path='UserCreated' element={<UserCreated/>}/>
-          <Route path="/Home" component={HomeAccess ? "./" : HomeAccess} />
-
+          <Route path='*' element={<NotFound/>}/>
         </Routes>
         </BrowserRouter>   
         </div>    
