@@ -29,13 +29,13 @@ const HomeAccess = () =>{
             alert("Wrong Email");
         } else if (correctEmail && correctPass ==false){
             alert("Wrong Password") 
-        } else if (correctEmail === emailStored && correctPass === passStored) {
+        } else if (email === emailStored && password === passStored) {
             navigate('/Home')
         }
         else if (email ===''|| password ==='') {
             alert("Please complete the fields")            
         } 
-        else alert("There is not a user- please Sign up!")       
+        else alert("Your Credential does not match with any user")     ;;
     }
     const signUp = (e)=>{
         e.preventDefault()
