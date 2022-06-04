@@ -3,11 +3,14 @@ import ReactDOM from "react-dom/client";
 import { useState } from "react";
 import { Routes, Route, Link } from "react-router-dom";
 import { Navigate, useNavigate } from "react-router";
-import { useEffect } from "react";
+import { Outlet } from "react";
 
 //Pages
 import NavComponent from "./NavComponent";
 import About from "./AboutUs";
+import Private from "./Private";
+import Home from "./Home";
+
 
 
 const HomeAccess = () =>{
@@ -16,6 +19,8 @@ const HomeAccess = () =>{
    const [email, setEmail] = useState("");
     const [password, setpassword] = useState('');
     const navigate =  useNavigate();
+    
+    
     const submited = (e) => {
             // Here check if the credentials are correct for access 
         e.preventDefault()
@@ -25,12 +30,15 @@ const HomeAccess = () =>{
         const correctEmail = email === emailStored;
         const correctPass = password === passStored;
 
+
+      
+
         if(correctEmail== false && correctPass){
             alert("Wrong Email");
         } else if (correctEmail && correctPass ==false){
             alert("Wrong Password") 
         } else if (email === emailStored && password === passStored) {
-            navigate('/Home')
+            {navigate('/Home')}
         }
         else if (email ===''|| password ==='') {
             alert("Please complete the fields")            
@@ -44,21 +52,18 @@ const HomeAccess = () =>{
        
     return( 
         <div>
-            <h1></h1>
-            <h2 className="log-in">Log In</h2>
+            <h2 className="log-in">Welcome!</h2>
             <form onSubmit={submited}>
-                <label> Email address</label>
-                <input type="email" placeholder="loveragabriel" required
+                <label> Email Address</label>
+                <input type="email" placeholder="loveragabriel20@gmail.com" required
                 value={email}
                 onChange={(e) =>setEmail(e.target.value)}></input>
                 <label> Password</label>
                 <input type="password" placeholder="**********" required
                 value={password}
                 onChange={(e) => setpassword(e.target.value)}></input>
-                <button onClick={submited}>SUBMIT</button>
-            </form>          
-            <hr></hr>
-              
+                <button onClick={submited}>Submit</button>
+            </form>                      
             <hr></hr>
             <h2 className="sign-up"> Don't have an account? </h2>
             <button onClick={signUp}>Create Account</button>
@@ -69,3 +74,4 @@ const HomeAccess = () =>{
 
 
 export default HomeAccess;
+

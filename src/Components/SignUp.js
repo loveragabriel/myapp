@@ -4,9 +4,9 @@ import { useState } from "react";
 import { Routes, Route, Link } from "react-router-dom";
 import { Navigate, useNavigate } from "react-router";
 import styled from "styled-components";
+import NavNoLogIn from "./NavNoLogIn";
 import { toHaveErrorMessage } from "@testing-library/jest-dom/dist/matchers";
-/*import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faArrowRightRotate } from '@fortawesome/free-solid-svg-icons'*/
+
 
  
 //Pages
@@ -40,6 +40,7 @@ const SignUp= ()=> {
 }
     return(
         <div>
+        <NavNoLogIn/>
             <h1>Hello This practice</h1>
             <form onSubmit={submitClick}>
             <div>

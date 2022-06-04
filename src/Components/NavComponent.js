@@ -1,5 +1,7 @@
 import React from "react";
 import { Routes, Route, Link } from "react-router-dom";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faArrowRightRotate } from '@fortawesome/free-solid-svg-icons'
 
 
 const NavComponent = () =>{
@@ -8,10 +10,10 @@ const NavComponent = () =>{
             <div className="nav-container">
                 <nav className="NavBar">
                     <h1 className="web-title">
-                       My App
+                       Icon
                     </h1>
                     <div className="nav-icon">
-                            ICON
+                    <FontAwesomeIcon icon="fa-solid fa-acorn" />
                     </div>
                     <ul>
                         <li className="btn-about  ">
