@@ -16,6 +16,9 @@ import NavComponent from "./Components/NavComponent";
 import SignUp from "./Components/SignUp";
 import UserCreated from "./Components/UserCreated";
 import { NotFound } from "./Components/NotFound";
+import Private from "./Components/Private";
+
+
 
 
 function App() {
@@ -25,7 +28,9 @@ function App() {
       <BrowserRouter>
         <Routes>
           <Route path="/" element={<HomeAccess/>}/>
-          <Route path="/Home" element={<Home/>}/>
+          <Route exact path='/' element={<Private/>}>
+            <Route exact path='/Home' element={<Home/>}/>
+          </Route>
           <Route path="AboutUs" element={<About/>}/>
           <Route path="Contact" element={<Contact/>}/>
           <Route path='NavComponent' element={<NavComponent/>}/>
