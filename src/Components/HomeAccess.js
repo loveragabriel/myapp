@@ -1,15 +1,12 @@
 import React from "react";
 import ReactDOM from "react-dom/client";
 import { useState } from "react";
-import { Routes, Route, Link } from "react-router-dom";
+
 import { Navigate, useNavigate } from "react-router";
-import { Outlet } from "react";
+
 
 //Pages
-import NavComponent from "./NavComponent";
-import About from "./AboutUs";
-import Private from "./Private";
-import Home from "./Home";
+
 
 
 
