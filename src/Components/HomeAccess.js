@@ -52,7 +52,7 @@ const HomeAccess = () =>{
        
     return( 
         <div>
-            <h2 className="log-in">Welcome!</h2>
+            <h1 className="log-in">Welcome!</h1>
             <form onSubmit={submited}>
                 <label> Email Address</label>
                 <input type="email" placeholder="loveragabriel20@gmail.com" required

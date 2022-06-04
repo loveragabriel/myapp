@@ -7,12 +7,6 @@ import styled from "styled-components";
 import NavNoLogIn from "./NavNoLogIn";
 import { toHaveErrorMessage } from "@testing-library/jest-dom/dist/matchers";
 
-
- 
-//Pages
-
-
- 
 const SignUp= ()=> {
     const [name,setName] = useState("");
     const [email,SetEmail] = useState("");
@@ -20,8 +14,6 @@ const SignUp= ()=> {
     const [rPassword, SetRPassword] = useState("");
     const [ifLognUp, setIfLogUp] = useState('false');
     const navigate =  useNavigate();
-
-
     const submitClick =(e)=>{
         e.preventDefault()   
         const myObject=[]
@@ -41,7 +33,7 @@ const SignUp= ()=> {
     return(
         <div>
         <NavNoLogIn/>
-            <h1>Hello This practice</h1>
+            <h1>Make the must of you time!</h1>
             <form onSubmit={submitClick}>
             <div>
                 <label>Name </label>

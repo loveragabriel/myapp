@@ -54,10 +54,12 @@ background: linear-gradient(6deg, rgba(96,61,88,1) 12%, rgba(0,173,255,1) 100%);
 }
 
 .Form-Container label{
-  text-align: center;
+  text-align: left;
   display: block;
   font-weight: 800;
-  color: #61dafb;
+  color: hsl(193, 95%, 68%);
+  margin-left: 3.5em;
+
 }
 
 .sign-up-form label {
@@ -66,7 +68,7 @@ background: linear-gradient(6deg, rgba(96,61,88,1) 12%, rgba(0,173,255,1) 100%);
 }
 
 h1{
-  
+  padding-top: 1.5em;
   font-size: 20px;
   color: #61dafb;
 
@@ -140,9 +142,14 @@ a {
   }
 
   .nav-container{
+    padding-top: 1.5em;;
     display: flex;
     background-color: #204f5c;
     justify-content: center;  
+  }
+
+  .Form-Container label{
+    margin-left: 10vw;
   }
 
 
@@ -167,6 +174,10 @@ hr{
     display: flex;
     flex-direction: row;
     font-size: 16px;
+  }
+
+  .Form-Container label{
+    margin-left: 10vw;
   }
 
 }
@@ -204,7 +215,6 @@ li{
   /*background-color: #378297;*/
   align-items: center;
   opacity: 0.7;
-  margin-top: 2px;
   width: 100%;
   border-radius: 8px;
   box-shadow: 10px 10px 25px 0px rgba(56, 47, 47, 0.46);   
