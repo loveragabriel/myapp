@@ -10,7 +10,7 @@ const NavNoLogIn = () =>{
                    <div className="nav-icon">
                    <i className="fa-solid fa-jug-detergent"></i>                    </div>
                     <ul>
-                        <li className="btn-about  ">
+                      {/*  <li className="btn-about  ">
                             <Link to="/aboutUs">
                                 About Us
                             </Link>
@@ -19,7 +19,7 @@ const NavNoLogIn = () =>{
                             <Link to="/Contact">
                                 Contacs
                             </Link>
-                        </li>
+                        </li>*/}
                         <li className="btn-contact">
                             <Link to="/">
                                 Home

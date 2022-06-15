@@ -9,8 +9,8 @@ import {
 //Pages
 import './App.css';
 import About from './Components/AboutUs';
+import Dash from "./Components/Dash";
 import Home from "./Components/Home";
-import HomeAccess from "./Components/HomeAccess";
 import Contact from "./Components/Contact";
 import NavComponent from "./Components/NavComponent";
 import SignUp from "./Components/SignUp";
@@ -27,9 +27,9 @@ function App() {
     <div className="Form-Container">
       <BrowserRouter>
         <Routes>
-          <Route path="/" element={<HomeAccess/>}/>
+          <Route path="/Home" element={<Home/>}/>
           <Route exact path='/' element={<Private/>}>
-            <Route exact path='/Home' element={<Home/>}/>
+            <Route exact path='/Dash' element={<Dash/>}/>
           </Route>
           <Route path="AboutUs" element={<About/>}/>
           <Route path="Contact" element={<Contact/>}/>
