@@ -27,7 +27,7 @@ function App() {
     <div className="Form-Container">
       <BrowserRouter>
         <Routes>
-          <Route path="/Home" element={<Home/>}/>
+          <Route path="/" element={<Home/>}/>
           <Route exact path='/' element={<Private/>}>
             <Route exact path='/Dash' element={<Dash/>}/>
           </Route>

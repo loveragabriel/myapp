@@ -2,6 +2,12 @@ body{
 background: rgb(96,61,88);
 background: linear-gradient(6deg, rgba(96,61,88,1) 12%, rgba(0,173,255,1) 100%);
 }
+
+:root{
+  --blue: #002663; 
+  --orange: #F48924; 
+  --grey: #4d4f53; 
+}
 .App {
   text-align: center;
 }
@@ -49,7 +55,7 @@ background: linear-gradient(6deg, rgba(96,61,88,1) 12%, rgba(0,173,255,1) 100%);
   text-align: center;
   margin-bottom: 10vh;
   border-radius: 8px;
-  background: rgb(9,9,121);
+  background: var(--blue);
   background: linear-gradient(180deg, rgba(9,9,121,1) 7%, rgba(83,91,219,1) 76%, rgba(0,212,255,1) 100%);
 }
 
