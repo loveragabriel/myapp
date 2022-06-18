@@ -17,6 +17,7 @@ import SignUp from "./Components/SignUp";
 import UserCreated from "./Components/UserCreated";
 import { NotFound } from "./Components/NotFound";
 import Private from "./Components/Private";
+import { ForgotPassword } from "./Components/ForgotPassword";
 
 
 function App() {
@@ -35,6 +36,7 @@ function App() {
           <Route path='SignUp' element={<SignUp/>}/>
           <Route path='UserCreated' element={<UserCreated/>}/>
           <Route path='*' element={<NotFound/>}/>
+          <Route path="ForgotPassword" element={<ForgotPassword/>}/>
         </Routes>
         </BrowserRouter>   
         </div>    

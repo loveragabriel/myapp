@@ -30,6 +30,7 @@ font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans
  font-size: 1.5em;
  color: #FFFFFF;
  font-weight: 600;
+ cursor: pointer;
 }
 
 .Form-Container{
@@ -92,10 +93,43 @@ button:hover {
   margin-top: 10em;
   color: #FFFFFF;
   text-shadow: 2px 1px 3px #F48924;
+  cursor: pointer;
 }
 /* -------- STYLE HOME COMPONENT ------------------*/
 /*----------------- FINISH ------------------------ */
  
+
+/*---------------- ForgotPage-------------------- */
+.recovery{
+  background-color: var(--orange);
+  margin-top: 10em;
+  height: 100vh;
+  border-radius: 10px 10px 0 0;
+}
+
+.back{
+  font-size: 1em;
+  display: flex;
+  justify-content: start;
+  padding: 10px;
+  color: #FFFFFF;
+  text-shadow: 2px 1px 3px #F48924;
+  cursor: pointer;
+}
+
+.back:hover{
+  transform: scale(1.009); 
+}
+
+.recovery label{
+  color: #FFFFFF;
+  padding-top: 2em;
+}
+
+
+
+
+
 
 
 .App-header {
@@ -134,6 +168,7 @@ button:hover {
   text-shadow: -1px -1px 8px rgba(27, 30, 31, 1);
   margin: 1em  auto;
 }*/
+
 
 ul li{
   background-color: #8a9ec3;

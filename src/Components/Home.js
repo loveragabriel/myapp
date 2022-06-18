@@ -36,6 +36,10 @@ const Home = () =>{
         e.preventDefault()
         if (signUp){navigate('/SignUp')}
     }
+    const ForgotPassword = (e)=>{
+        e.preventDefault()
+        if (ForgotPassword){navigate('/ForgotPassword')}
+    }
     return( 
         <div id="Home">
             <h1 className="log-in-title">Welcome</h1>
@@ -52,7 +56,7 @@ const Home = () =>{
                 <button onClick={submited}>Sign In</button>
             </form> 
             <div className="Home-bottom-links">
-                <h2 className="Forgot-password">Forgot Password</h2>
+                <h2 className="Forgot-password" onClick={ForgotPassword}>Forgot Password</h2>
                 <h2 className="sign-up" onClick={signUp}> SignUp </h2>
             </div>
              {/*<button onClick={signUp}>Create Account</button>*/}
