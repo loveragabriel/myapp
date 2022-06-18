@@ -37,10 +37,11 @@ const Home = () =>{
         if (signUp){navigate('/SignUp')}
     }
     return( 
-        <div>
-            <h1 className="log-in">Welcome!</h1>
+        <div id="Home">
+            <h1 className="log-in-title">Welcome</h1>
+            <p className="Sign-In">Sign In</p>
             <form onSubmit={submited}>
-                <label> Email Address</label>
+                <label> Email</label>
                 <input type="email" placeholder="loveragabriel20@gmail.com" required
                 value={email}
                 onChange={(e) =>setEmail(e.target.value)}></input>
@@ -48,11 +49,13 @@ const Home = () =>{
                 <input type="password" placeholder="**********" required
                 value={password}
                 onChange={(e) => setpassword(e.target.value)}></input>
-                <button onClick={submited}>Submit</button>
-            </form>                      
-            <hr></hr>
-            <h2 className="sign-up"> Don't have an account? </h2>
-            <button onClick={signUp}>Create Account</button>
+                <button onClick={submited}>Sign In</button>
+            </form> 
+            <div className="Home-bottom-links">
+                <h2 className="Forgot-password">Forgot Password</h2>
+                <h2 className="sign-up" onClick={signUp}> SignUp </h2>
+            </div>
+             {/*<button onClick={signUp}>Create Account</button>*/}
 
         </div>
     )

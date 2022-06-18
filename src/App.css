@@ -1,27 +1,102 @@
+*{
+  margin-top: 0;
+}
 body{
+
 background: rgb(96,61,88);
 background: linear-gradient(6deg, rgba(96,61,88,1) 12%, rgba(0,173,255,1) 100%);
+font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif
 }
 
 :root{
-  --blue: #002663; 
+  --blue: #002663;
   --orange: #F48924; 
   --grey: #4d4f53; 
 }
-.App {
+
+  /* -------- STYLE HOME COMPONENT ------------------*/
+/* Title for Home with top space for logo */
+
+.log-in-title{
+  padding-top: 5em;
+  font-size: 2em;
+  font-weight: 200;
+  color: #FFFFFF;
+}
+
+.Sign-In{
+  margin-left: 55px;
+ text-align: left;
+ font-size: 1.5em;
+ color: #FFFFFF;
+ font-weight: 600;
+}
+
+.Form-Container{
+  max-width: 500PX;
+  height: 90vh;
+  margin: 2px auto;
   text-align: center;
+  margin-bottom: 10vh;
+  background: var(--blue);
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.Form-Container label{
+  text-align: left;
+  display: block;
+  font-weight: 400;
+  color: hsl(192, 24%, 96%);
+  margin-left: 55px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+/* Focus on hover */
+.Form-Container input:hover{
+  background-color: #eef8a3f8;
 }
+
+.Form-Container input, .Form-Container text, .Form-Container select{
+  width: 80%;
+  padding: 6px 10px;
+  margin: 10px auto;
+  border: 1px solid #ddd;
+  box-sizing: border-box;
+  display: block;
+  border-radius: 8px;
+  
+}
+
+.Form-Container button{
+  background-color: var(--orange);
+  margin-top: 25px;
+  border: none;
+  padding: 8px;
+  border-radius: 8px;
+  width: 80%;
+  font-size: 1em;
+ color: #FFFFFF;
+ font-weight: 600;
+}
+
+button:hover {
+  background-color: #F4892499;
+  color:white;
+  box-shadow: 2px 2px 2px #090a0b;
+  transform: scale(1.03); 
+}
+
+.Home-bottom-links{
+  font-size: 0.5em;
+  display: flex;
+  justify-content: space-around;
+  position: relative;
+  margin-top: 10em;
+  color: #FFFFFF;
+  text-shadow: 2px 1px 3px #F48924;
+}
+/* -------- STYLE HOME COMPONENT ------------------*/
+/*----------------- FINISH ------------------------ */
+ 
+
 
 .App-header {
   background-color: #282c34;
@@ -38,79 +113,27 @@ background: linear-gradient(6deg, rgba(96,61,88,1) 12%, rgba(0,173,255,1) 100%);
   color: #61dafb;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
 
 
-.Form-Container{
-  max-width: 500PX;
-  height: 90vh;
-  margin: 2px auto;
-  text-align: center;
-  margin-bottom: 10vh;
-  border-radius: 8px;
-  background: var(--blue);
-  background: linear-gradient(180deg, rgba(9,9,121,1) 7%, rgba(83,91,219,1) 76%, rgba(0,212,255,1) 100%);
-}
-
-.Form-Container label{
-  text-align: left;
-  display: block;
-  font-weight: 800;
-  color: hsl(193, 95%, 68%);
-  margin-left: 3.5em;
-
-}
-
+/*
 .sign-up-form label {
   text-align: left;
   margin-left: 55px;
-}
+}*/
 
-h1{
-  padding-top: 1.5em;
-  font-size: 20px;
-  color: #61dafb;
 
-}
 
-.Form-Container input, .Form-Container text, .Form-Container select{
-  width: 80%;
-  padding: 6px 10px;
-  margin: 10px auto;
-  border: 1px solid #ddd;
-  box-sizing: border-box;
-  display: block;
-  border-radius: 3px;
-}
 
-.Form-Container button{
-  background-color: blueviolet;
-  color: #282c34;
-  border: 0;
-  padding: 8px;
-  border-radius: 8px;
-  cursor: pointer;
-}
 
-button:hover {
-  background-color: #282c34;
-  color:white;
-  box-shadow: 2px 2px 2px #090a0b;
-}
 
+/*
 .log-in, .sign-up{
   font-size: 2em;
-  color: #566e9f;
+  font-weight: 200;
+  color: #FFFFFF;
   text-shadow: -1px -1px 8px rgba(27, 30, 31, 1);
   margin: 1em  auto;
-}
+}*/
 
 ul li{
   background-color: #8a9ec3;
@@ -159,11 +182,6 @@ a {
   }
 
 
-}
-
-hr{
-  margin-top: 50px;
-  box-shadow: 2px 2px 2px rgb(55, 57, 50);
 }
 
 
@@ -229,8 +247,4 @@ li{
 .nav-icon{
   display: none;
   margin: 10px;
-}
-
-.sign-up{
-  margin-top: 35%;
 }

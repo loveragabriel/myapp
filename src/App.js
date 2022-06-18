@@ -19,8 +19,6 @@ import { NotFound } from "./Components/NotFound";
 import Private from "./Components/Private";
 
 
-
-
 function App() {
   return (
     <div className="App">
