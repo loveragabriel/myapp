@@ -3,6 +3,7 @@ import ReactDOM from "react-dom/client";
 import { useState } from "react";
 import { Outlet } from "react-router";
 import { Navigate, useNavigate } from "react-router";
+import { Circle } from "./Clicle";
 
 export const ForgotPassword = () => {
    /* const recovery = (e) => {
@@ -20,6 +21,7 @@ const back = (e)=>{
   return (
     <div className='forgot-password'>
           <h2 className="back" onClick={back}> Back </h2>
+          <Circle/>
           <div className="recovery">
             <label>Email</label>
                 <input type="email" placeholder="recovery@email.com" name="recoveryEmail" />

@@ -17,12 +17,26 @@ font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans
   /* -------- STYLE HOME COMPONENT ------------------*/
 /* Title for Home with top space for logo */
 
+.circle{
+  padding-top: 2em;
+}
+.dot{
+  margin: 0 auto;
+  height: 100px;
+  width: 100px;
+  background-color: #bbb;
+  border-radius: 100%;
+  display: flex;
+  justify-content: center;
+}
+
 .log-in-title{
-  padding-top: 5em;
+  padding-top: 1em;
   font-size: 2em;
   font-weight: 200;
   color: #FFFFFF;
 }
+
 
 .Sign-In{
   margin-left: 55px;
@@ -102,7 +116,7 @@ button:hover {
 /*---------------- ForgotPage-------------------- */
 .recovery{
   background-color: var(--orange);
-  margin-top: 10em;
+  margin-top: 5em;
   height: 100vh;
   border-radius: 10px 10px 0 0;
 }

@@ -6,6 +6,7 @@ import { Navigate, useNavigate } from "react-router";
 
 
 //Pages
+import { Circle } from "./Clicle";
 
 const Home = () =>{
    const [email, setEmail] = useState("");
@@ -42,6 +43,7 @@ const Home = () =>{
     }
     return( 
         <div id="Home">
+           <Circle/>
             <h1 className="log-in-title">Welcome</h1>
             <p className="Sign-In">Sign In</p>
             <form onSubmit={submited}>
