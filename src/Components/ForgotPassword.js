@@ -3,7 +3,7 @@ import ReactDOM from "react-dom/client";
 import { useState } from "react";
 import { Outlet } from "react-router";
 import { Navigate, useNavigate } from "react-router";
-import { Circle } from "./Clicle";
+import { Circle } from "./Circle";
 
 export const ForgotPassword = () => {
    /* const recovery = (e) => {

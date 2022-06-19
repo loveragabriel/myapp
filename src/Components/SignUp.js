@@ -6,6 +6,7 @@ import { Navigate, useNavigate } from "react-router";
 import styled from "styled-components";
 import NavNoLogIn from "./NavNoLogIn";
 import { toHaveErrorMessage } from "@testing-library/jest-dom/dist/matchers";
+import { Circle } from "./Circle";
 
 const SignUp= ()=> {
     const [name,setName] = useState("");
@@ -29,11 +30,17 @@ const SignUp= ()=> {
             alert("Welcome " + name )
             {navigate('/')};
     }
+    
+}
+const back = (e)=>{
+    e.preventDefault()
+    if (back){navigate('/')}
 }
     return(
         <div>
-        <NavNoLogIn/>
-            <h1>Make the must of you time!</h1>
+        <h2 className="back" onClick={back}> Back </h2>
+        <Circle/>
+            <p className="Register">Register</p>
             <form onSubmit={submitClick}>
             <div>
                 <label>Name </label>

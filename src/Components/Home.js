@@ -7,7 +7,7 @@ import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 
 
 //Pages
-import { Circle } from "./Clicle";
+import { Circle } from "./Circle";
 
 const Home = () =>{
    const [email, setEmail] = useState("");
@@ -27,7 +27,7 @@ const Home = () =>{
         } else if (correctEmail && correctPass ==false){
             alert("Wrong Password") 
         } else if (email === emailStored && password === passStored) {
-            {navigate('/Home')}
+            {navigate('/Dash')}
         }
         else if (email ===''|| password ==='') {
             alert("Please complete the fields")            

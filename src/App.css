@@ -38,13 +38,12 @@ font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans
 }
 
 
-.Sign-In{
+.Sign-In, .Register{
   margin-left: 55px;
  text-align: left;
  font-size: 1.5em;
  color: #FFFFFF;
  font-weight: 600;
- cursor: pointer;
 }
 
 .Form-Container{
