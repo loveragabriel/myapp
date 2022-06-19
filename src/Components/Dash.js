@@ -1,13 +1,24 @@
-import React from "react";
-import NavComponent from "./NavComponent";
+import React from 'react'
+import { Navigate, useNavigate } from "react-router";
 
-const Dash =()=>{
-    
-    return(      
-        <div>
-            <NavComponent/>
-            <h1>Welcome you are in </h1>
+
+ const Dash = () => {
+    const navigate =  useNavigate();
+    const back = (e)=>{
+        e.preventDefault()
+        if (back){navigate('/')}
+     }
+  return (
+    <div className='Dash'>
+        <div className='NAV-BAR'>
+        <h2 className="back" onClick={back}> Back </h2>
+        <div className='div-log'><span class="dot"></span></div>
         </div>
-    )
+        <section className='Home-panel'>
+            Home Panel!
+        </section>
+    </div>
+  )
 }
-export default  Dash;
+
+export default Dash; 

@@ -116,7 +116,7 @@ button:hover {
 .recovery{
   background-color: var(--orange);
   margin-top: 5em;
-  height: 100vh;
+  height: 30vh;
   border-radius: 10px 10px 0 0;
 }
 
@@ -228,8 +228,9 @@ a {
   .Form-Container label{
     margin-left: 10vw;
   }
-
-
+.recovery{
+  height: 100vh;
+}
 }
 
 
@@ -295,4 +296,36 @@ li{
 .nav-icon{
   display: none;
   margin: 10px;
+}
+/*----------------------DASH-------------------*/
+.NAV-BAR{
+  display: flex;
+  justify-content: space-between;
+  background-color: #204f5c99;
+  border-radius: 8px;
+}
+
+.NAV-BAR .back{
+  display: flex;
+  align-items: center;
+  margin-top: 6px;
+}
+.div-log span{
+  display: flex;
+  align-items: center;
+  height: 50px;
+  width: 50px;
+  margin: 5px;
+
+}
+
+/*-----------HOME PANEL-------*/
+
+.Home-panel{
+  display: flex;
+  justify-content: center;
+  background-color: var(--orange);
+  margin: 20px auto;
+  width: 50vw;
+  height: 50vh;
 }

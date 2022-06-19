@@ -15,8 +15,10 @@ export const ForgotPassword = () => {
 const back = (e)=>{
     e.preventDefault()
     if (back){navigate('/')}
-}
+    
 
+ }
+ 
 
   return (
     <div className='forgot-password'>
