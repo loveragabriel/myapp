@@ -3,6 +3,7 @@ import ReactDOM from "react-dom/client";
 import { useState } from "react";
 import { Outlet } from "react-router";
 import { Navigate, useNavigate } from "react-router";
+import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 
 
 //Pages
